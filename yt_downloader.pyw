@@ -4,7 +4,7 @@ from tkinter import *
 from tkinter import messagebox, filedialog
 
 
-
+#window creation
 rt = Tk()
 rt.geometry("500x110")
 rt.title("YT Downloader")
@@ -14,10 +14,12 @@ rt.config(background="#FFF")
 vid_link = StringVar()
 dw_path = StringVar()
 
+#browse function
 def bw():
     dw_dir=filedialog.askdirectory(initialdir=pathlib.Path.cwd())
     dw_path.set(dw_dir)
 
+#download function
 def dw():
     link= vid_link.get()
     dw_folder = dw_path.get()
@@ -26,6 +28,7 @@ def dw():
     stream.download(dw_folder)
     messagebox.showinfo("Success!","Downloaded to:"+dw_folder)
 
+#window widgets
 def window():
     link_lbl = Label(rt, text="Video link", width=20)
     link_lbl.grid(row=1,column=0,padx=5,pady=5)
