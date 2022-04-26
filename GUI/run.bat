@@ -1,2 +1,2 @@
 @echo off
-python main.pyw
+python main.py
