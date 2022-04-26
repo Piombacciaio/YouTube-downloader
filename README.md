@@ -4,7 +4,7 @@ simple script to download youtube videos
 After something like 11 months I fixed the script.
 There is also a GUI verion now.
 
-###
+
 # Requirements:
 - pytube
 - moviepy
