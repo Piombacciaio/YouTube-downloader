@@ -5,7 +5,7 @@ After something like 11 months I fixed the script.
 There is also a GUI verion now.
 
 ###
-#Requirements:
+# Requirements:
 - pytube
 - moviepy
 - pysimplegui
