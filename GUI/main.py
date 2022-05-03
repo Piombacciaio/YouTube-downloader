@@ -1,6 +1,9 @@
-import PySimpleGUI as sg, moviepy.editor, os, pathlib, sys
+import PySimpleGUI as sg, moviepy.editor, os, pathlib, sys, ctypes
 from pytube import YouTube as yt
 from tkinter import filedialog
+
+ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 6 )
+
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=0, cols=0))
 sg.theme('DarkBlack')
 info_tab = [
