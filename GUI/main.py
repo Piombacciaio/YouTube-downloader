@@ -55,7 +55,7 @@ layout = [[
     ]])
 ]]
 
-start_layout = [[sg.Input(key='-LINK-'), sg.Button('Search')]]
+start_layout = [[sg.Input(key='-LINK-'), sg.Button('Search', bind_return_key=True)]]
 window = sg.Window("Youtube Downloader", start_layout, icon="icon.ico", titlebar_icon="icon.ico")
 
 def progress(stream, chunk, bytes):
